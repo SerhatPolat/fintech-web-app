@@ -1,0 +1,13 @@
+.balanceDiv {
+  margin-bottom: 80px;
+}
+
+.balanceDiv * {
+  color: white;
+}
+
+.balanceDiv hr {
+  width: 150px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}

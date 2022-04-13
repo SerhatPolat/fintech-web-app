@@ -1,6 +1,7 @@
 import React from "react";
-import incomingData from "./incoming/incomingData";
-import expenseData from "./expense/expenseData";
+import incomingData from "../incoming/incomingData";
+import expenseData from "../expense/expenseData";
+import "./balance.css";
 
 export default function Balance() {
   const { incomings } = incomingData;
@@ -18,5 +19,11 @@ export default function Balance() {
 
   const balance = totalIncoming - totalExpense;
 
-  return <h1>${balance}</h1>;
+  return (
+    <div className="balanceDiv">
+      <p className="yourBalanceHeader">YOUR BALANCE</p>
+      <hr />
+      <h1 className="balance">${balance}</h1>
+    </div>
+  );
 }

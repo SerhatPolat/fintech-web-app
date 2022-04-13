@@ -9,3 +9,14 @@
   margin: auto;
   text-align: center;
 }
+
+.App .halfCircle {
+  background-color: #1976d2;
+  color: white;
+  position: absolute;
+  z-index: -1;
+  height: 350px;
+  width: 350px;
+  top: -190px;
+  border-radius: 175px;
+}
