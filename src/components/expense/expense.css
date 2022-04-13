@@ -1,0 +1,10 @@
+.redDiv {
+  background-color: rgb(255, 109, 109);
+  width: 150%;
+  margin-left: -60px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}

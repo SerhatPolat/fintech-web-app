@@ -4,6 +4,10 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import IncomingDiv from "./incoming/incoming";
+import incomingData from "./incoming/incomingData";
+import ExpenseDiv from "./expense/expense";
+import expenseData from "./expense/expenseData";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -39,6 +43,8 @@ function a11yProps(index) {
 }
 
 export default function BasicTabs() {
+  const { incomings } = incomingData;
+  const { expenses } = expenseData;
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -58,10 +64,14 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        there is no incomings
+        {incomings.map((incoming) => (
+          <IncomingDiv key={incoming.id} incoming={incoming}></IncomingDiv>
+        ))}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        there is no expenses
+        {expenses.map((expense) => (
+          <ExpenseDiv key={expense.id} expense={expense}></ExpenseDiv>
+        ))}
       </TabPanel>
     </Box>
   );

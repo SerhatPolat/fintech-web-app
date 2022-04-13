@@ -1,0 +1,10 @@
+.greenDiv {
+  background-color: rgb(123, 255, 211);
+  width: 150%;
+  margin-left: -60px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
