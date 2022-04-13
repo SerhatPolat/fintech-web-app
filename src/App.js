@@ -1,6 +1,5 @@
 import "./styles/App.css";
 import BasicTabs from "./components/tabs";
-import Balance from "./components/balance";
 
 function App() {
   return (
