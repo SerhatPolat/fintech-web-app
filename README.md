@@ -4,6 +4,7 @@
 <h1>Screenshots</h1>
 <img src="screenshots/ss1.png" width="300"> <img src="screenshots/ss2.png" width="316">
 <hr>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
